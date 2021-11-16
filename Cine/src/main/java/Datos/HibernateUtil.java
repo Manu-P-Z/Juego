@@ -151,7 +151,7 @@ public class HibernateUtil {
                 break;
         }
         query = HibernateUtil.getCurrentSession().createQuery(stmt);
-
-        return (ArrayList<Object>) query.getResultList();
+      //  return (ArrayList<Object>) ((org.hibernate.query.Query<?>) query).list();
+       return (ArrayList<Object>) query.getResultList();
     }
 }
