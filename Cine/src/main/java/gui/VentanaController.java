@@ -140,7 +140,9 @@ public class VentanaController implements ActionListener {
           case 0:
               Pelicula pelicula = (Pelicula)o;
               ventana.textField_idPeliculas.setText(Integer.toString(pelicula.getId()));
-              ventana.textField_DirectorPeliculas.setText(Integer.toString(pelicula.getId_director()));
+              //ventana.textField_DirectorPeliculas.setText(Integer.toString(pelicula.getId_director()));
+              ventana.textField_DirectorPeliculas.setText(Integer.toString(pelicula.getDirector().getId()));
+
               ventana.textField_TituloPeliculas.setText(pelicula.getTitulo());
               ventana.textField_FechaEstreno.setText(new SimpleDateFormat("dd-MM-yyyy").format(pelicula.getFecha_estreno()));
               break;
@@ -167,7 +169,9 @@ public class VentanaController implements ActionListener {
                 Pelicula pelicula = (Pelicula)object;
                 System.out.println(Integer.parseInt(ventana.textField_idPeliculas.getText()));
                 pelicula.setId(Integer.parseInt(ventana.textField_idPeliculas.getText()));
-                pelicula.setId_director(Integer.parseInt(ventana.textField_DirectorPeliculas.getText()));
+ //               pelicula.setId_director(Integer.parseInt(ventana.textField_DirectorPeliculas.getText()));
+ //Hay que poner el objeto director               pelicula.setId_director(Integer.parseInt(ventana.textField_DirectorPeliculas.getText()));
+
                 pelicula.setTitulo(ventana.textField_TituloPeliculas.getText());
                 try {
                     pelicula.setFecha_estreno(new Date(new SimpleDateFormat("dd-MM-yyyy").parse(ventana.textField_FechaEstreno.getText()).getTime()));
