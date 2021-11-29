@@ -1,11 +1,13 @@
-package java;
+package Examen;
 
+
+import Examen.Datos.CsvUtil;
+import Examen.gui.VentanaController;
+import Examen.gui.Ventana;
 
 import javax.swing.*;
-import java.Datos.CsvUtil;
-import java.Datos.MongoUtil;
-import java.gui.VentanaController;
-import java.gui.VentanaDatosCsv;
+
+import Examen.Datos.MongoUtil;
 
 public class Main {
     public static void main(String[] args) throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
@@ -14,7 +16,7 @@ public class Main {
                 UIManager.getSystemLookAndFeelClassName());
 
         // Instanciar Ventana
-        VentanaDatosCsv ventana = new VentanaDatosCsv();
+        Ventana ventana = new Ventana();
         MongoUtil datosMongo = new MongoUtil();
         CsvUtil datosCsv = new CsvUtil();
 

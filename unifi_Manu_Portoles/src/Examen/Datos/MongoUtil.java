@@ -1,10 +1,9 @@
-package java.Datos;
+package Examen.Datos;
 
+import Examen.Objetos.Hotspotop;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
-
-import java.Objetos.Hotspotop;
 
 public class MongoUtil {
     MongoClient mongoClient = new MongoClient();

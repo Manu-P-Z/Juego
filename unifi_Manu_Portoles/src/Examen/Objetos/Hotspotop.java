@@ -1,4 +1,4 @@
-package java.Objetos;
+package Examen.Objetos;
 
 import org.bson.types.ObjectId;
 

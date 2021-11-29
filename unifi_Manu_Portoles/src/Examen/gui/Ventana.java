@@ -1,8 +1,8 @@
-package java.gui;
+package Examen.gui;
 
 import javax.swing.*;
 
-public class VentanaDatosCsv {
+public class Ventana {
     public JButton btnSubirDatos;
     private JPanel panel1;
     public JTextArea textAreaLogs;

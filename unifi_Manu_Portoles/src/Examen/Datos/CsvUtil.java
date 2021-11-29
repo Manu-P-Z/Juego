@@ -1,6 +1,7 @@
-package java.Datos;
+package Examen.Datos;
 
-import java.Objetos.Hotspotop;
+import Examen.Objetos.Hotspotop;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
