@@ -36,7 +36,7 @@ public class Ventana {
     public JTextPane buscarTextPane;
 
     public Ventana() {
-        JFrame frame = new JFrame("Ventana");
+        JFrame frame = new JFrame("Autores");
         frame.setContentPane(panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

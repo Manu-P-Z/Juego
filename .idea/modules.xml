@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Autores/Autores.iml" filepath="$PROJECT_DIR$/Autores/Autores.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cine/Cine.iml" filepath="$PROJECT_DIR$/Cine/Cine.iml" />
       <module fileurl="file://$PROJECT_DIR$/Juego.iml" filepath="$PROJECT_DIR$/Juego.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unifi_Manu_Portoles/unifi_Manu_Portoles.iml" filepath="$PROJECT_DIR$/unifi_Manu_Portoles/unifi_Manu_Portoles.iml" />
     </modules>
   </component>
 </project>

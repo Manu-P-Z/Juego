@@ -145,7 +145,7 @@ public class VentanaController implements ActionListener {
 
     private void cargar(Autor autor) {
 
-        ventana.textFieldId.setText(autor.getId().toString());
+        ventana.textFieldId.setText(autor.getId().toString().replaceFirst("^0+(?!$)", ""));
         ventana.textFieldNombre.setText(autor.getNombre());
         ventana.textFieldPriApellido.setText(autor.getApellido1());
         ventana.textFieldSegAepllido.setText(autor.getApellido2());
@@ -197,7 +197,7 @@ public class VentanaController implements ActionListener {
             if (ventana.buscarTextPane.getText().isEmpty()) {
                 ventana.buscarTextPane.setText(autor.getId().toString().replaceFirst("^0+(?!$)", "") + " - " + autor.getNombre());
             } else {
-                ventana.buscarTextPane.setText(ventana.buscarTextPane.getText() + "\n" + autor.getId() + " - " + autor.getNombre());
+                ventana.buscarTextPane.setText(ventana.buscarTextPane.getText() + "\n" + autor.getId().toString().replaceFirst("^0+(?!$)", "") + " - " + autor.getNombre());
             }
 
         }
