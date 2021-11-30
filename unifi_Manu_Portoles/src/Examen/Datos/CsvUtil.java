@@ -24,7 +24,7 @@ public class CsvUtil {
                 String[] campos = linea.split(",");
 
                 String nombre = campos[2];
-                String passwd = campos[7];
+                String passwd = campos[6];
 
                 Hotspotop datos =  new Hotspotop(nombre,passwd);
 

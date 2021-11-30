@@ -29,7 +29,7 @@ public class VentanaController implements ActionListener {
         String accion = e.getActionCommand();
 
         if ("SubirDatos".equals(accion)) {
-            List<Hotspotop> listaDatos = datosCsv.listaDatosCsv("datos");
+            List<Hotspotop> listaDatos = datosCsv.listaDatosCsv("/home/marnau/datos.csv");
             for (Hotspotop dato: listaDatos) {
                 datosMongo.addDatos(dato);
                 ventana.textAreaLogs.append(dato.getName());

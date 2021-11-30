@@ -6,11 +6,11 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
 public class MongoUtil {
-    MongoClient mongoClient = new MongoClient();
+    MongoClient mongoClient = new MongoClient("172.21.130.3:27017");
     MongoDatabase db;
 
     private void crearConexion() {
-        db = mongoClient.getDatabase("Datos");
+        db = mongoClient.getDatabase("datos");
     }
 
     public void addDatos(Hotspotop datos) {
